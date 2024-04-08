@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import requests
 
 app = Flask(__name__)
 
@@ -10,7 +11,13 @@ def home():
 @app.route('/books')
 def all_books():
     # Display all books available on the website
-    return render_template('books.html')
+    url = "http://127.0.0.2:5000/api/books"
+    res = requests.get(url)
+    if res.status_code == 200:
+        books = res.json()
+    else:
+        books = "Eroor"
+    return render_template('books.html', books = books)
 
 @app.route('/books/<int:book_id>')
 def book_details(book_id):
