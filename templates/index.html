@@ -4,56 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>
-    <header>
-        <h1 class="bg-yellow-400">Welcome to My Website</h1>
-        <nav class="bg-slate-700">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/books">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="font-roboto flex justify-center">
+    <div class="bg-yellow-400 w-[80vw]">
+        <header class="bg-gray-900 text-white py-3 flex">
+            <h1 class="flex-1 text-lg">
+              <span class="font-bold">Worm</span>Reader
+            </h1>
+            <nav class="flex-1">
+              <ul class="flex justify-around">
+                <li class="hover:text-blue-50 transition-all">
+                  <a href="/">Home</a>
+                </li>
+                <li class="hover:text-blue-50 transition-all">
+                  <a href="/books">Books</a>
+                </li>
+                <li class="hover:text-blue-50 transition-all">
+                  <a href="/authors">Authors</a>
+                </li>
+                <li class="hover:text-blue-50 transition-all">
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        
+        <section class="bg-blue-50 text-center py-20 px-10">
+            <h2 class="text-4xl font-bold mb-4">Unleash Your Imagination with WormReader!</h2>
+            <p class="text-lg text-gray-700 leading-10 mb-8">Welcome to WormReader, the ultimate destination for book lovers and avid readers. Dive into a world of captivating stories, unforgettable characters, and boundless imagination. WormReader is a haven for those seeking literary adventures across various genres. Whether you're a fan of mystery, romance, science fiction, or fantasy, our extensive collection of books will transport you to new worlds and ignite your imagination like never before. With our user-friendly interface, discovering new books, connecting with fellow readers, and creating your personal reading list has never been easier. Join our vibrant community of book enthusiasts, engage in lively discussions, and share your literary journey with like-minded individuals. Embrace the joy of reading and unlock a world of possibilities with WormReader. Feed your mind, expand your horizons, and let your imagination soar. Happy reading!</p>
+          </section>
+          <section class="bg-gray-100 py-8">
+            <div class="max-w-4xl mx-auto px-4">
+              <h2 class="text-3xl font-bold mb-4">Services</h2>
+              <ul class="flex ">
+                <li class="border flex-1 mx-2 aspect-square items-center justify-center flex bg-white p-4 rounded-lg shadow-md">
+                  <span>Service 1</span>
+                </li>
+                <li class="border flex-1 mx-2 aspect-square items-center justify-center flex bg-white p-4 rounded-lg shadow-md">
+                  <span>Service 2</span>
+                </li>
+                <li class="border flex-1 mx-2 aspect-square items-center justify-center flex bg-white p-4 rounded-lg shadow-md">
+                  <span>Service 3</span>
+                </li>
+              </ul>
+            </div>
+          </section>
     
-    <section>
-        <h2>About</h2>
-        <p>This is the index page of my website.</p>
-    </section>
-
-    <section>
-        <h2>Services</h2>
-        <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Testimonials</h2>
-        <p>Here are some testimonials from our satisfied customers:</p>
-        <ul>
-            <li>"Great service and excellent support!" - John Doe</li>
-            <li>"I highly recommend their services." - Jane Smith</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with us:</p>
-        <ul>
-            <li>Email: info@example.com</li>
-            <li>Phone: 123-456-7890</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+        <section class="bg-gray-100 py-10">
+            <div class="max-w-4xl mx-auto px-4">
+              <h2 class="text-3xl font-bold mb-4">Testimonials</h2>
+              <p class="text-gray-600 mb-8">Here are some testimonials from our satisfied customers:</p>
+              <ul class="space-y-4">
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                  <blockquote class="text-lg italic">
+                    "Great service and excellent support!"
+                  </blockquote>
+                  <p class="text-gray-700 mt-2">- John Doe</p>
+                </li>
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                  <blockquote class="text-lg italic">
+                    "I highly recommend their services."
+                  </blockquote>
+                  <p class="text-gray-700 mt-2">- Jane Smith</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+    
+          <section class="bg-gray-200 py-10">
+            <div class="max-w-4xl mx-auto px-4">
+              <h2 class="text-3xl font-bold mb-4">Contact</h2>
+              <p class="text-gray-600 mb-8">Feel free to get in touch with us:</p>
+              <ul class="space-y-4">
+                <li class="flex items-center">
+                  <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  <p>Email: info@example.com</p>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 5l-7 7-7-7" />
+                  </svg>
+                  <p>Phone: 123-456-7890</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+    
+          <footer class="bg-gray-200 py-4 text-center">
+            <p class="text-gray-600">&copy; 2024 My Website. All rights reserved.</p>
+          </footer>
+    </div>
 </body>
 </html>
 </body>
