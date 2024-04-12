@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Books</title>
 </head>
 <body>
-    <h1>All the books page</h1>
-    <div class="border-2 w-fit p-3">
-        {% for sub_books in books %}
-        <div>
-            <ul>{{sub_books[0]}}</ul>
-            <ul>{{sub_books[2][4:16]}}</ul>
-            <a class="bg-blue-500 rounded-md text-white text-xs px-2 py-1 " href="{{sub_books[3]}}">Download</a>
-            <ul>{{sub_books[4]}}</ul>
-            <ul>{{sub_books[5]}}</ul>
+    <div class="bg-blue-100 flex items-center justify-center min-h-[100vh] font-roboto "> 
+        <div class="w-[70%]">
+            <div class="flex  justify-center flex-wrap">
+                {% for sub_books in books %}
+                <div class=" rounded-sm shadow-md bg-white w-[15%] p-2 m-2">
+                  <ul class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{{sub_books[0]}}</ul>
+                  <ul class="capitalize mt-3 ">{{sub_books[1]}}</ul>
+                  <ul class="text-xs mb-3">{{sub_books[2][4:16]}}</ul>
+                  <a class="bg-blue-500 rounded-md text-white text-xs px-2 py-1" href="{{sub_books[3]}}">Download</a>
+                 <div class="flex flex-row justify-around mt-3">
+                    <div class="flex w-fit items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                        <svg class="w-4 text-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                            <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                        </svg>          
+                          <ul class="text-xs"> {{sub_books[4]}}</ul>
+                        </div>
+                        <div class="flex w-fit rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                            <svg class="w-4 text-violet-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                <path fillRule="evenodd" d="M10.5 3.75a6 6 0 0 0-5.98 6.496A5.25 5.25 0 0 0 6.75 20.25H18a4.5 4.5 0 0 0 2.206-8.423 3.75 3.75 0 0 0-4.133-4.303A6.001 6.001 0 0 0 10.5 3.75Zm2.25 6a.75.75 0 0 0-1.5 0v4.94l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V9.75Z" clipRule="evenodd" />
+                              </svg>
+                              
+                            <ul>{{sub_books[5]}}</ul>
+                        </div>
+                 </div>
+                </div>
+                {% endfor %}
+              </div>
         </div>
-        {% endfor %}
     </div>
-    
 </body>
 </html>
+
+

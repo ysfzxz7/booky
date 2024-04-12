@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
     <title>Books</title>
 </head>
-<body>
-    <h1>book details</h1>
+<body class="font-roboto">
+    <div class="w-full min-h-full flex justify-center items-center">
+        <div class="bg-blue-200 w-[75%] min-h-[100vh] flex flex-col items-center justify-around p-5">
+            <h1 class="">Books details</h1>
+            <div class="bg-white rounded-sm">
+                <div class="container mx-auto ">
+                    <div class="max-w-md mx-auto bg-white rounded-md shadow-md">
+                      <div class="p-4">
+                        <h1 class="text-2xl font-semibold mb-2">Book Title</h1>
+                        <p class="text-gray-600 mb-4">Author Name</p>
+                        <div class="flex flex-row">
+                            <img  src="https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg" alt="Book Cover" class="rounded-md mb-4 w-36">
+                
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold mb-2">Description</h2>
+                            <p class="text-gray-800 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+                              scelerisque mi, quis bibendum neque hendrerit id. Vivamus ullamcorper placerat lacus, eu cursus nulla
+                              malesuada at.</p>
+                            </div>
+                        </div>
+                
+                        <ul class="mb-4">
+                          <li><strong>ISBN:</strong> 1234567890</li>
+                          <li ><strong>Genre:</strong> <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Fiction</span></li>
+                          <li><strong>Published:</strong> 2022-01-01</li>
+                          <li><strong>Pages:</strong> 250</li>
+                        </ul>
+                
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md font-medium">download Now</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
